@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Cosmos.Samples.KeyValue.Console.NoSQL", "console-nosql\Microsoft.Cosmos.Samples.KeyValue.Console.NoSQL.csproj", "{B258CC11-1B18-46E5-A6ED-80E71A7C059A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Cosmos.Samples.KeyValue.Console.Table", "console-table\Microsoft.Cosmos.Samples.KeyValue.Console.Table.csproj", "{8E8150F3-193F-4515-AC75-8734365B52ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B258CC11-1B18-46E5-A6ED-80E71A7C059A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B258CC11-1B18-46E5-A6ED-80E71A7C059A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B258CC11-1B18-46E5-A6ED-80E71A7C059A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B258CC11-1B18-46E5-A6ED-80E71A7C059A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E8150F3-193F-4515-AC75-8734365B52ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E8150F3-193F-4515-AC75-8734365B52ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E8150F3-193F-4515-AC75-8734365B52ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E8150F3-193F-4515-AC75-8734365B52ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

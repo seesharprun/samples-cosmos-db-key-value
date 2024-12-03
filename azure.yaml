@@ -1,0 +1,23 @@
+name: samples-cosmos-db-key-value
+hooks:
+  postprovision:
+    windows:
+      run: |
+        dotnet user-secrets set "NOSQL_ENDPOINT" "$env:NOSQL_ENDPOINT" --project ./src/console-nosql/Microsoft.Cosmos.Samples.KeyValue.Console.NoSQL.csproj
+        dotnet user-secrets set "NOSQL_DATABASENAME" "$env:NOSQL_DATABASENAME" --project ./src/console-nosql/Microsoft.Cosmos.Samples.KeyValue.Console.NoSQL.csproj
+        dotnet user-secrets set "NOSQL_CONTAINERNAME" "$env:NOSQL_CONTAINERNAME" --project ./src/console-nosql/Microsoft.Cosmos.Samples.KeyValue.Console.NoSQL.csproj
+        dotnet user-secrets set "TABLE_ENDPOINT" "$env:TABLE_ENDPOINT" --project ./src/console-table/Microsoft.Cosmos.Samples.KeyValue.Console.Table.csproj
+        dotnet user-secrets set "TABLE_TABLENAME" "$env:TABLE_TABLENAME" --project ./src/console-table/Microsoft.Cosmos.Samples.KeyValue.Console.Table.csproj
+      shell: pwsh
+      continueOnError: false
+      interactive: true
+    posix:
+      run: |
+        dotnet user-secrets set "NOSQL_ENDPOINT" "$NOSQL_ENDPOINT" --project ./src/console-nosql/Microsoft.Cosmos.Samples.KeyValue.Console.NoSQL.csproj
+        dotnet user-secrets set "NOSQL_DATABASENAME" "$NOSQL_DATABASENAME" --project ./src/console-nosql/Microsoft.Cosmos.Samples.KeyValue.Console.NoSQL.csproj
+        dotnet user-secrets set "NOSQL_CONTAINERNAME" "$NOSQL_CONTAINERNAME" --project ./src/console-nosql/Microsoft.Cosmos.Samples.KeyValue.Console.NoSQL.csproj
+        dotnet user-secrets set "TABLE_ENDPOINT" "$TABLE_ENDPOINT" --project ./src/console-table/Microsoft.Cosmos.Samples.KeyValue.Console.Table.csproj
+        dotnet user-secrets set "TABLE_TABLENAME" "$TABLE_TABLENAME" --project ./src/console-table/Microsoft.Cosmos.Samples.KeyValue.Console.Table.csproj
+      shell: sh
+      continueOnError: false
+      interactive: true
